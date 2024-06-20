@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="left-body">
+      <img
+        src="resources/background-1.jpg"
+        alt="background"
+        id="background-image"
+      />
+    </div>
+    <div id="right-body">
+      <div id="header">
+        <span id="heading">Sign Up</span>
+      </div>
+      <div id="form">
+        <div id="form-heading">
+          <h2>Let's do this</h2>
+        </div>
+        <form id="form-inputs">
+          <div id="form-input-left">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              placeholder="eg:John"
+              required
+              minlength="2"
+              maxlength="20"
+            />
+            <label for="email">Email</label>
+            <input type="email" name="email" value="" required />
+            <label for="password">Password</label>
+            <input type="password" name="password" value="" />
+          </div>
+          <div id="form-input-right">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              value=""
+              placeholder="eg:Smith"
+              required
+              minlength="3"
+              maxlength="20"
+            />
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="tel"
+              name="phone-number"
+              value=""
+              minlength="10"
+              maxlength="10"
+            />
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" value="" />
+          </div>
+        </form>
+      </div>
+      <div id="footer">
+        <button type="submit" id="sign-up-button">Create Account</button>
+        <p>
+          Already have an account? <span><a href="#">Log in</a></span>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
