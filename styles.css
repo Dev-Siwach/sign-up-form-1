@@ -264,12 +264,28 @@ label {
 
 input {
   border: 0px;
+  transition: all 250ms;
 }
 
 input:valid {
   border: 1.2px solid rgba(44, 97, 67, 1);
+  outline: none;
 }
 
 input:invalid {
   border: 2px solid rgba(182, 0, 79, 1);
+  outline: none;
+}
+input:empty,
+input:focus-visible,
+input:focus {
+  border: 1px solid black;
+  outline: none;
+}
+
+input:hover,
+input:focus,
+input:focus-visible {
+  transform: scale(1.1);
+  box-shadow: 0 0 0.5rem rgba(44, 97, 67, 1);
 }
