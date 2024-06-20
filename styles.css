@@ -261,3 +261,15 @@ label {
 #sign-in-query {
   font-family: "Playwrite ES", "Times New Roman", Times, serif;
 }
+
+input {
+  border: 0px;
+}
+
+input:valid {
+  border: 1.2px solid rgba(44, 97, 67, 1);
+}
+
+input:invalid {
+  border: 2px solid rgba(182, 0, 79, 1);
+}
