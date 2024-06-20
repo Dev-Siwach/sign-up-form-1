@@ -170,6 +170,7 @@ body {
 
 #form-inputs {
   display: flex;
+  gap: 3rem;
 }
 
 #form-input-left {
@@ -189,4 +190,13 @@ body {
   height: 30vh;
   padding: 0 5rem;
   background-color: #dee0df;
+}
+
+#first-name-input,
+#last-name-input,
+#email-input,
+#phone-number-input,
+#password-input,
+#confirm-password-input {
+  margin-bottom: 2rem;
 }
