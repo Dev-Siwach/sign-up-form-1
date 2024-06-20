@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <title>Sign up</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -19,9 +22,6 @@
         <span id="heading">Sign Up</span>
       </div>
       <div id="form">
-        <div id="form-heading">
-          <h2>Let's do this</h2>
-        </div>
         <form id="form-inputs">
           <div id="form-input-left">
             <label for="first-name" id="first-name-label">First Name</label>
@@ -40,6 +40,8 @@
               name="email"
               value=""
               required
+              minlength="10"
+              maxlength="40"
               id="email-input"
             />
             <label for="password" id="password-label">Password</label>
@@ -47,6 +49,8 @@
               type="password"
               name="password"
               value=""
+              minlength="12"
+              maxlength="40"
               id="password-input"
             />
           </div>
@@ -87,8 +91,9 @@
       </div>
       <div id="footer">
         <button type="submit" id="sign-up-button">Create Account</button>
-        <p>
-          Already have an account? <span><a href="#">Log in</a></span>
+        <p id="sign-in-query">
+          Already have an account?
+          <span style="font-family: initial"><a href="#">Log in</a></span>
         </p>
       </div>
     </div>
